@@ -70,7 +70,7 @@ def restart_program():
     python = sys.executable
     os.execl(python, python, * sys.argv)
 def logError(text):
-    cl.log("[ 錯誤 ] " + str(text))
+    cl.log("[ Mistake ] " + str(text))
     time_ = datetime.now()
     with open("errorLog.txt","a") as error:
         error.write("\n[%s] %s" % (str(time), text))
